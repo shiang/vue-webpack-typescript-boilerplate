@@ -4,7 +4,7 @@ const { VueLoaderPlugin } = require('vue-loader')
 const isDev = process.env.NODE_ENV === 'development'
 
 module.exports = {
-  entry: './src/index.js',
+  entry: './src/index.ts',
   module: {
     rules: [
       {
@@ -12,7 +12,7 @@ module.exports = {
         loader: 'vue-loader'
       },
       {
-        test: /\.js$/,
+        test: /\.(js|ts)x?$/,
         loader: 'babel-loader',
         exclude: /node_modules/
       },

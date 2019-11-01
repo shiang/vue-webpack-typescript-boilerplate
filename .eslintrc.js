@@ -16,11 +16,11 @@ module.exports = {
     SharedArrayBuffer: 'readonly'
   },
   parserOptions: {
-    parser: 'babel-eslint',
+    parser: '@typescript-eslint/parser',
     ecmaVersion: 2018,
     sourceType: 'module'
   },
-  plugins: ['vue'],
+  plugins: ['vue', '@typescript-eslint'],
   rules: {
     'no-unused-vars': ['off'],
     semi: ['error', 'never'],
